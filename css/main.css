@@ -73,7 +73,7 @@ body{
  /* Banner section start */ 
 
  .main-section{
-    background-image: url('/insure/images/background.svg');
+    background-image: url("../images/background.svg");
     background-position: calc(50% - 805px) calc(50% + 100px);
     background-repeat: no-repeat;
     background-size: 300px;
@@ -81,7 +81,7 @@ body{
 
 .banner-section{
     background-color: #2D2641;
-    background-image: url(/insure/images/hero\ background.svg);
+    background-image: url("../images/hero\ background.svg");
     background-repeat: no-repeat;
     background-position: calc(50% + 730px) calc(50% - 50px);
     padding-top: 105px;
