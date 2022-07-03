@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: "Karla";
     src: url("../fonts/karla-v22-latin-700.woff"),
@@ -23,7 +30,8 @@
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
@@ -41,19 +49,31 @@ body{
 
 .header-top{
     width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     padding: 31px 0px;
 }
 
 .header-list-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     margin: 0;
@@ -112,8 +132,12 @@ body{
 
 .banner-item{
     /* width: 1100px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .banner-item-start-line{
@@ -179,9 +203,15 @@ body{
 }
 
 .about-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -227,9 +257,14 @@ body{
     width: 1100px;
     height: 250px;
     background-image: url("../images/we-work\ background.png");
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 auto;
     margin-top: 158px; 
 }
@@ -251,9 +286,15 @@ body{
     width: 160px;
     height: 40px;
     text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border: 1.5px solid #fff;
     color: #fff;
     font-weight: 600;
@@ -268,22 +309,30 @@ body{
 /* Footer start */
 
 .footer-section{
-    background-image: url('/insure/footer\ backgrund.svg');
+    background-image: url("../images/footerbg.svg");
     background-repeat: no-repeat;
-    background-position: calc(50% - 690px) calc(50% - 90px);
+    background-position: calc(50% - 690px) calc(50% - 150px);
     background-color: #FAFAFA;
     margin-top: 150px;
     padding-top: 67px;
 }
 
 .footer-start{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer-start-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style: none;
     margin: 0;
 }
@@ -299,59 +348,30 @@ body{
     margin: 36px 0px 48px 0px;
 }
 
-.footer-table{
-    padding-bottom: 64px;
+.footer-text-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
 }
 
-.footer-table-th-start{
-    padding-bottom: 36px;
-    font-size: 13px;
-    color:#837D88;
-}
-
-.footer-table-th{
-    padding-bottom: 20px;
-    color:#837D88;
-    font-size: 13px;
-    padding-left: 200px;
-}
-
-.footer-table-th:nth-child(3){
-    padding-left: 240px;
-}
-.footer-table-th:nth-child(4){
-    padding-left: 240px;
-}
-
-.footer-table-td{
-    padding: 10px 0px 10px 245px;
-    font-size: 13px;
-    font-weight: 650;
-    color: #2C2830;
-}
-
-.footer-table-td:nth-child(1){
-    padding: 0px;
-    padding-top: 10px;
-}
-
-/* .footer-table-td:nth-child(2){
-    padding-left: 200px;
-} */
-
-.footer-table-td-start{
-    font-size: 13px;
-    font-weight: 650;
-    color: #2C2830;
-}
-
-.footer-table-td-between{
-    padding: 10px 0px 10px 245px;
-    font-size: 13px;
-    color: #2C2830;
-    font-weight: 650;
-}
-
-.footer-table-td-between:nth-child(1){
+.footer-list{
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
+
+.footer-heading{
+    margin-bottom: 35px;
+    color: #837D88;
+    font-weight: 700;
+}
+
+.footer-link{
+    display: block;
+    text-decoration: none;
+    color:#2D2641;
+    font-weight: 700;
+    margin: 16px 0px;
+}
+
+
